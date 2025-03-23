@@ -79,3 +79,14 @@ Menggunakan tag `<table>` untuk membuat tabel.
     </tr>
 </table>
 ```
+
+## 4. Formulir dalam HTML
+Tag `<form>` digunakan untuk membuat formulir input pengguna.
+```html
+<form>
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama">
+    <br>
+    <input type="submit" value="Kirim">
+</form>
+```
