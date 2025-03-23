@@ -90,3 +90,26 @@ Tag `<form>` digunakan untuk membuat formulir input pengguna.
     <input type="submit" value="Kirim">
 </form>
 ```
+
+## 5. HTML Semantik
+HTML semantik membantu memberikan makna pada struktur halaman web.
+```html
+<header>
+    <h1>Judul Situs</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang</a></li>
+    </ul>
+</nav>
+<section>
+    <article>
+        <h2>Judul Artikel</h2>
+        <p>Isi artikel...</p>
+    </article>
+</section>
+<footer>
+    <p>Hak Cipta &copy; 2025</p>
+</footer>
+```
