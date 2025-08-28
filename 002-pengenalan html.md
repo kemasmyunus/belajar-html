@@ -1,34 +1,67 @@
 # Pengenalan HTML
+
 ## HTML
-HTML adalah singkatan dari HyperText Markup Language, ini adalah struktur dasar dari halaman web.
-HTML mendeskripsikan struktur sari isi konten halaman web. selain html, terdapat hal lain untuk mendeskripsikan sebuah halaman web, seperti untuk gaya tampilan halaman web menggunakan CSS atau interaksi halaman web menggunakan Javascript.
-di materi ini, kita hanya akan fokus membahas html, tidak akan membahas tentang css atau javascript. html sendiri sebenarnya hanyalah kumpulan kode yang berisi informasi halaman web. kode html akan dibaca oleh web browser untuk diampilkan secara visual.
+**HTML (HyperText Markup Language)** adalah bahasa markup yang digunakan untuk membuat struktur dasar dari sebuah halaman web.  
+HTML mendeskripsikan susunan dan isi dari konten sebuah halaman.  
+
+Selain HTML, ada juga teknologi lain yang biasa digunakan untuk melengkapi sebuah halaman web, seperti **CSS** untuk tampilan (style) dan **JavaScript** untuk interaksi. Namun, pada materi ini kita hanya akan berfokus pada HTML.  
+
+HTML sendiri hanyalah kumpulan kode yang berisi informasi tentang halaman web. Kode tersebut akan dibaca oleh **Web Browser** untuk kemudian ditampilkan secara visual.
+
+---
 
 ## Kode HTML
-untuk melihat kode html, kita bisa buka website yang kita mau menggunakan web browser. lalu gunakan menu view source di aplikasi web browser nya.
-misal kita buka website https://www.github.com/
+Untuk melihat kode HTML, kita bisa membuka sebuah website dengan web browser lalu menggunakan fitur **View Page Source**.  
+Sebagai contoh, ketika kita membuka [https://www.github.com/](https://www.github.com/), kita bisa melihat kode HTML yang digunakan untuk membangun halaman tersebut.
+
+---
 
 ## Tag
-Kode html, berisikan kumpulan tag yang kita buat. tag adalah perintah dalam html yang memiliki aturan pembuka dan penutup.
-ada banyak sekali tag di html, nanti kita akan pelajari satu per satu. contoh untuk membuat sebuah tulisan paragraf di html, kita bisa menggunakan tag `p`, dimana penulisannya :
-``` html
-<p> Hello World </p>
-<p> Ini adalah tag paragraf</p>
-```
-pada contoh code tag `p` diatas, terdapat tag `<p>` yang merupakan tag pembuka untuk tag paragraf dan tag `</p>` yang merupakan tag penutup
-sedangkan `Hello World` adalah isi konten dari tag p
-tag berisi kontennya bisa kita sebut dengan nama element.
+Kode HTML tersusun dari **tag**. Tag adalah instruksi dalam HTML yang biasanya memiliki pasangan pembuka dan penutup.  
+
+Contoh tag untuk membuat paragraf adalah `<p>`. Berikut contohnya:
+
+```html
+<p>Hello World</p>
+<p>Ini adalah tag paragraf</p>
+````
+
+Pada contoh di atas:
+
+* `<p>` adalah **tag pembuka**
+* `</p>` adalah **tag penutup**
+* teks di dalamnya, seperti *Hello World*, disebut **konten**
+
+Sebuah tag beserta isinya disebut sebagai **elemen**.
+
+---
 
 ## Void Element
-Pada beberapa kasus, ada tag di HTML yang tidak perlu memiliki konten, hal ini bisa kita sebut dengan void element.
-contoh, di html terdapat tag untuk membuat break line / enter, dengan menggunakan tag `br`.
-karena tag `br` tidak memiliki konten, maka kita bisa menggunakan perintah `<br>` atau `</br>` tanpa harus menggunakan tag pembuka dan tag penutup.
+
+Tidak semua tag HTML memiliki pasangan pembuka dan penutup. Beberapa tag tidak membutuhkan konten, sehingga disebut **void element**.
+
+Contohnya adalah tag `<br>` yang digunakan untuk membuat baris baru (line break). Karena tidak memiliki isi, tag ini bisa ditulis langsung sebagai `<br>` tanpa harus menggunakan penutup.
+
+---
 
 ## Attribute
-Element memiliki atribut. atribut adalah informasi tambahan untuk tag yang kita gunakan. kita bisa tambahkan atribut di element pada tag pembuka.
-contoh untuk menampilkan gambar di html, kita bisa menggunakan tag `<img>` dengan atribut `src` yang berisikan lokasi gambar yang ingin kita tampilkan.
-`<img src="folder_gambar/file.jpg">` .
-attribute bisa digunakan di element biasa atau di void element.
 
-## HTML tidak case sensitive
-Penulisan tag di html tidak case sensitive, artinya huruf besar atau kecil tidak masalah. namun sangat disarankan menggunakan huruf kecil semua, misal `<p>`, jangan `<P>`.
+Elemen HTML dapat memiliki **atribut**, yaitu informasi tambahan yang diletakkan pada tag pembuka.
+
+Sebagai contoh, untuk menampilkan gambar kita bisa menggunakan tag `<img>` dengan atribut `src` sebagai penunjuk lokasi file gambar:
+
+```html
+<img src="folder_gambar/file.jpg">
+```
+
+Atribut dapat digunakan pada elemen biasa maupun pada void element.
+
+---
+
+## HTML Tidak Case Sensitive
+
+Penulisan tag dalam HTML tidak bersifat **case sensitive**, artinya huruf besar atau kecil tidak berpengaruh.
+Sebagai contoh, `<p>` dan `<P>` akan berfungsi sama.
+
+Namun, praktik terbaik adalah menuliskan tag menggunakan huruf kecil semua agar lebih konsisten dan mudah dibaca.
+
