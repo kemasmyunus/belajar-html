@@ -1,19 +1,27 @@
 # Pengenalan Web
+
 ## Web
-Web merupakan kumpulan informasi yang tersedia dalam sebuah komputer yang terkoneksi secara terus menerus melalui internet.
-web bisa berisi informasi dalam bentuk apapun, seperti teks, gambar, audio, video dan lain-lain. web berjalan di apllikasi yang bernama web server, yaitu aplikasi yang digunakan untuk menyimpan dan menyampaikan isi informasi web.
-Saat ini web digunakan oleh jutaan, bahkan mungkin milyaran orang setiap hari. dengan web, kita bisa belajar, mendengarkan musik, nonton video, belanja, sampai memesan makanan secara online.
-namun perlu diperhatikian, web bukanlah internet
+**Web (World Wide Web)** adalah kumpulan informasi yang tersedia dalam sebuah komputer (server) yang selalu terhubung melalui internet. Informasi ini bisa berupa teks, gambar, audio, video, dan berbagai bentuk lainnya.  
+
+Web berjalan pada sebuah aplikasi bernama **Web Server**, yaitu aplikasi yang berfungsi untuk menyimpan dan menyampaikan informasi kepada pengguna. Saat ini, web digunakan oleh jutaan bahkan miliaran orang setiap hari. Melalui web, kita dapat belajar, mendengarkan musik, menonton video, berbelanja, bahkan memesan makanan secara online.  
+
+> Hal yang perlu dipahami, **web berbeda dengan internet**. Web hanyalah salah satu layanan yang berjalan di atas internet.
+
+---
 
 ## Internet
-Internet adalah mekanisme komunikasi antar komputer, awal internet ada untuk komunikasi antar komputer, kita membutuhkan jaringan kabel telepon, namun sekarang, semenjak berjamurnya jaringan wifi dan sejenisnya, komunikasi antar komputer jadi lebih cepat dan mudah.
+**Internet** adalah jaringan komunikasi global yang menghubungkan komputer di seluruh dunia. Pada awalnya, internet digunakan untuk komunikasi antar komputer melalui kabel telepon. Seiring dengan berkembangnya teknologi, kini tersedia jaringan Wi-Fi, fiber optik, dan jaringan seluler yang membuat komunikasi antar komputer menjadi lebih cepat dan mudah.
+
+---
 
 ## Domain
-Saat komputer web terhubung ke internet, biasanya dia memiliki alamat. alamat ini bernama ip address, formatnya misalnya 172.217.194.94.
-karena alamat ip address sangat menyulitkan untuk diingat, untung saja ada yang namanya domain.nama domain adalah alamat yang bisa digunakan sebagai alias ke ip address. misal seperti github.com, youtube.com dan lain-lain.
-dengan nama domain, sebagai manusia kita akan lebih mudah mengingat dibanding ip address. namun saat kita menggunakan nama domain, sebenarnya komputer tetap akan mengakses web menggunakan alamat ip address.
+Setiap komputer yang terhubung ke internet memiliki alamat unik yang disebut **IP Address**. Contohnya adalah `74.125.24.91`. Namun, alamat IP sulit diingat oleh manusia. Untuk mempermudah, digunakanlah **Domain Name** sebagai alias atau pengganti alamat IP. Misalnya `github.com` atau `youtube.com`.  
+
+Dengan adanya domain, manusia lebih mudah mengingat alamat web. Walaupun begitu, sebenarnya komputer tetap menggunakan alamat IP untuk mengakses web di balik layar.
+
+---
 
 ## Web Browser
-Jika web server adalah aplikasi yang digunakan untuk menyimpan informasi web, web browser adalah aplikasi yang digunakan untuk mengakses web melalui internet.
-kita bisa saja mengakses web secara langsung tanpa bantuan web browser, namun web server hanya akan memberi informasi bahasa mesin seperti html, javascript, css, gambar, video dan lain-lain.
-dengan menggunakan web browser, semua bahasa mesin tersebut bisa ditampilkan secara visual sehingga kita bisa menyerap informasi dengan lebih mudah.
+Jika **Web Server** berfungsi menyimpan dan menyajikan informasi web, maka **Web Browser** adalah aplikasi yang digunakan untuk mengakses dan menampilkan informasi tersebut. Tanpa web browser, komputer hanya akan menerima data mentah dari web server berupa HTML, CSS, JavaScript, gambar, atau video.  
+
+Web browser menerjemahkan data mentah tersebut menjadi tampilan visual yang mudah dipahami, sehingga kita bisa menikmati informasi dalam bentuk halaman web yang rapi dan interaktif.
