@@ -1,11 +1,28 @@
-# penamaan file html
-Sebenarnya tidak ada aturan dalam pembuatan nama ﬁle untuk HTML. Kita bisa menggunakan nama ﬁle apapun, dan huruf besar dan kecil apapun. Namun karena ﬁle HTML akan diakses sebagai URL pada web browser, misal :
-`www.kemasmyunus.com/namaﬁle.html`
-Maka sangat disarankan mengikuti praktek yang baik penamaan URL
+# Penamaan File HTML
 
-## praktek baik penamaan file html
-Jangan menggunakan huruf besar, selalu gunakan huruf kecil semua, misal :
-index.html, home.html, belajar.html, dan lain-lain
-Jangan menggunakan spasi pada nama ﬁle, jika butuh pemisah, gunakan - atau _, misal :
-belajar-html.html, halaman-login.html, belajar_html.html
-Jika butuh membuat folder di, gunakan aturan yang sama
+Pada dasarnya, tidak ada aturan baku untuk memberi nama file HTML. Kita bisa menggunakan nama apa saja, dengan huruf besar atau kecil.  
+Namun, karena file HTML akan diakses lewat **URL di browser**, contohnya:  
+`www.kemasmyunus.com/namafile.html`  
+
+Maka sebaiknya mengikuti **praktik penamaan yang baik** agar lebih rapi dan konsisten.
+
+## Praktik Baik Penamaan File HTML
+
+1. **Gunakan huruf kecil semua**  
+   Contoh:  
+   - `index.html`  
+   - `home.html`  
+   - `belajar.html`
+
+2. **Hindari spasi dalam nama file**  
+   Gunakan tanda **titik (-)** atau **garis bawah (_)** sebagai pemisah.  
+   Contoh:  
+   - `belajar-html.html`  
+   - `halaman-login.html`  
+   - `belajar_html.html`
+
+3. **Jika membuat folder**, gunakan aturan yang sama seperti penamaan file.  
+   Contoh:  
+   - `assets/`  
+   - `gambar/`  
+   - `css/`
