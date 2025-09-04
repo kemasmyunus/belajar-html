@@ -1,11 +1,13 @@
-## Reserved Characters
-Beberapa karakter sudah dipesan oleh HTML, sehingga kita tidak bisa gunakan pada tulisan teks
-biasa, contoh karakter <, / atau >
-Oleh karena itu, jika kita memaksakan menuliskan hal tersebut di teks paragraf misal, secara
-otomatis halaman HTML akan error / rusak / tidak sesuai dengan yang kita mau
+# Reserved Characters (Karakter yang Dipesan)
 
-Kode : HTML Reserved Characters
-``` html
+Di HTML, ada beberapa karakter khusus yang **tidak bisa langsung ditulis** di dalam teks biasa.
+Contohnya: `<`, `>` atau `/`.
+
+Kalau kita memaksakan menulis karakter ini langsung di HTML, biasanya hasilnya akan **error** atau tidak tampil sesuai yang kita mau.
+
+### Contoh salah:
+
+```html
 <html>
     <body>
         <h1>Belajar <HTML></h1>
@@ -13,21 +15,40 @@ Kode : HTML Reserved Characters
 </html>
 ```
 
-## Entities
-Karakter yang sudah dipesan di HTML, dinamakan HTML Entity
-Ada banyak sekali HTML Entity, dan direkomendasikan untuk menggunakan simbol Entity nya,
-ketika kita ingin menggunakan karakter tersebut
-Tapi sebenarnya tidak wajib, kita tetap bisa menggunakan karakter asli, namun lebih aman jika
-menggunakan simbol Entity nya
-Kita bisa lihat seluruh daftar HTML Entity di :
-https://oinam.github.io/entities/
-https://html.spec.whatwg.org/multipage/named-characters.html
+Kode di atas akan dianggap browser sebagai tag HTML, bukan teks biasa.
+Akibatnya, tulisan yang muncul tidak sesuai.
 
-Kode : HTML Entities
-``` html
+---
+
+# Entities (Cara Menulis Karakter Khusus)
+
+Supaya karakter khusus tadi bisa tetap ditampilkan sebagai teks, HTML menyediakan yang disebut **HTML Entities**.
+
+**HTML Entity** adalah kode khusus yang dimulai dengan `&` dan diakhiri dengan `;`.
+Dengan cara ini, browser tahu bahwa yang kita maksud adalah **karakter**, bukan tag HTML.
+
+Contoh:
+
+* `<` ditulis sebagai `&lt;` atau `&#60;`
+* `>` ditulis sebagai `&gt;` atau `&#62;`
+* `&` ditulis sebagai `&amp;`
+
+### Contoh benar:
+
+```html
 <html>
     <body>
-        <h1>Belajar &#60;HTML&#62;</h1>
+        <h1>Belajar &lt;HTML&gt;</h1>
     </body>
 </html>
 ```
+
+Hasilnya di browser:
+**Belajar <HTML>**
+
+---
+
+Kalau mau lihat daftar lengkap HTML Entities:
+
+* [oinam.github.io/entities](https://oinam.github.io/entities/)
+* [html.spec.whatwg.org](https://html.spec.whatwg.org/multipage/named-characters.html)
