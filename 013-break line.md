@@ -1,38 +1,56 @@
-## Break Line
-Seperti yang dibahas di materi Paragraph, enter di dalam tulisan tidak akan dianggap enter oleh
-HTML, jika kita ingin membuat enter, disarankan membuat paragraf terpisah
-Namun jika kita benar-benar ingin membuat enter di dalam paragraf, kita bisa menggunakan tag br
-Tag br adalah void element, jadi tidak memiliki konten
+# Break Line (Ganti Baris)
 
-Kode : Break Line
-``` html
+Seperti yang sudah dibahas di materi **Paragraph**, menekan tombol **Enter** di kode HTML **tidak akan membuat baris baru** di tampilan browser.
+Kalau mau membuat baris baru, biasanya kita buat paragraf terpisah dengan `<p>`.
+
+Tapi, kalau kita ingin memaksa baris baru di dalam paragraf yang sama, kita bisa menggunakan tag `<br>` (**break line**).
+
+👉 `<br>` termasuk **void element**, artinya tidak punya isi dan tidak perlu ditutup dengan tag penutup.
+
+### Contoh Break Line
+
+```html
 <html>
     <body>
         <h1>Belajar HTML</h1>
         <p>
-            Ini adalah paragraph<br>
+            Ini adalah paragraf pertama<br>
+            Ini adalah baris baru di paragraf yang sama
+        </p>
+    </body>
+</html>
+```
+
+Hasil di browser:
+Ini adalah paragraf pertama
+Ini adalah baris baru di paragraf yang sama
+
+---
+
+# Horizontal Rule (Garis Pemisah)
+
+Selain baris baru, kita juga bisa menambahkan **garis horizontal** sebagai pemisah konten.
+Caranya menggunakan tag `<hr>`.
+
+👉 `<hr>` juga **void element**, jadi tidak perlu tag penutup.
+
+### Contoh Horizontal Rule
+
+```html
+<html>
+    <body>
+        <h1>Belajar HTML</h1>
+        <p>
+            Ini adalah paragraf pertama<br>
             Ini adalah baris selanjutnya
         </p>
-    </body>
-</html>
-```
-
-## Horizontal Rule
-Di HTML, kita juga bisa membuat enter dengan garis horizontal (dari kiri ke kanan) sebagai
-pemisah
-Untuk melakukannya, kita bisa menggunakan tag hr
-Tag hr juga merupakan void element, jadi tidak memiliki konten
-
-Kode : Horizontal Rule
-``` html
-<html>
-    <body>
-        <h1>Belajar HTML</h1>
+        <hr>
         <p>
-            Ini adalah paragraph<br>
-            Ini adalah baris selanjutnya<hr>
-            ini adalah baris selanjutnya dengan horizontal rule
+            Ini adalah paragraf setelah garis pemisah
         </p>
     </body>
 </html>
 ```
+
+Hasil di browser:
+Teks pertama → garis horizontal → teks setelah garis.
