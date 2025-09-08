@@ -1,58 +1,66 @@
 ## Unordered List
-Untuk membuat daftar tulisan, kita bisa menggunakan tag ul di HTML
-Tiap daftar isi nya, kita bisa menggunakan tag li
+Untuk membuat daftar tanpa urutan (bullet point), kita bisa menggunakan tag `<ul>` di HTML.  
+Setiap item dalam daftar dituliskan dengan tag `<li>`.
 
-Kode : Unordered List
-``` html
+**Contoh Kode: Unordered List**
+```html
 <html>
     <body>
-        <h2>daftar hobi</h2>
+        <h2>Daftar Hobi</h2>
         <ul>
             <li>Badminton</li>
-            <li>catur</li>
-            <li>main game</li>
+            <li>Catur</li>
+            <li>Main Game</li>
         </ul>
     </body>
 </html>
-```
+````
+
+---
 
 ## Ordered List
-Jika kita ingin membuat daftar yang berurut (memiliki angka), kita bisa mengganti tag ul menjadi ol
-Untuk daftar isi nya tetap sama menggunakan tag li
 
-Kode : Ordered List
-``` html
+Jika kita ingin membuat daftar yang berurutan (memiliki angka), kita bisa mengganti tag `<ul>` menjadi `<ol>`.
+Untuk item daftar tetap menggunakan tag `<li>`.
+
+**Contoh Kode: Ordered List**
+
+```html
 <html>
     <body>
-        <h2>tahapan belajar html</h2>
+        <h2>Tahapan Belajar HTML</h2>
         <ol>
-            <li>belajar pengenalan web</li>
-            <li>belajar html</li>
-            <li>menjalankan web</li>
+            <li>Belajar pengenalan web</li>
+            <li>Belajar HTML</li>
+            <li>Menjalankan web</li>
         </ol>
     </body>
 </html>
 ```
 
-## Ordered List Type
-Pada kasus ketika kita menggunakan daftar yang berurut (ol), kita bisa mengubah format daftar
-nya, defaultnya menggunakan angka (dimulai dari 1).
-Kita bisa menambahkan attribute type di ol dengan nilai :
-type=”1”, artinya daftar isi akan menggunakan angka (ini adalah defaultnya)
-type=”A”, artinya daftar isi akan menggunakan huruf kapital
-type=”a”, artinya daftar isi akan menggunakan huruf kecil
-type=”I”, artinya daftar isi akan menggunakan angka romawi kapital
-type=”i”, artinya daftar isi akan menggunakan angka romawi kecil
+---
 
-Kode : Ordered List Type
-``` html
+## Ordered List dengan Atribut `type`
+
+Pada daftar berurutan (`<ol>`), kita bisa mengubah format penomoran dengan menambahkan atribut `type`.
+Secara default, daftar menggunakan angka (dimulai dari 1). Berikut pilihan nilainya:
+
+* `type="1"` → menggunakan angka (default)
+* `type="A"` → menggunakan huruf kapital (A, B, C, …)
+* `type="a"` → menggunakan huruf kecil (a, b, c, …)
+* `type="I"` → menggunakan angka Romawi kapital (I, II, III, …)
+* `type="i"` → menggunakan angka Romawi kecil (i, ii, iii, …)
+
+**Contoh Kode: Ordered List Type**
+
+```html
 <html>
     <body>
-        <h2>tahapan belajar html</h2>
+        <h2>Tahapan Belajar HTML</h2>
         <ol type="I">
-            <li>belajar pengenalan web</li>
-            <li>belajar html</li>
-            <li>menjalankan web</li>
+            <li>Belajar pengenalan web</li>
+            <li>Belajar HTML</li>
+            <li>Menjalankan web</li>
         </ol>
     </body>
 </html>
