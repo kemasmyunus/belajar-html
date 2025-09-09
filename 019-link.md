@@ -39,3 +39,68 @@ https://instagram.com/kemasmyunus
 https://github.com/kemasmyunus
 Kelebihan menggunakan Absolute URL adalah, kita bisa membuat Link menuju domain yang
 berbeda dengan website yang kita buat
+
+## Relative URL
+Relative URL adalah lokasi href dimana tetap menggunakan domain website saat ini
+Relative URL memiliki dua format, bisa diawali dengan /, atau tidak diawali dengan /
+Misal sekarang kita berada di halaman http://127.0.0.1/belajar-link/index.html , lalu kita memiliki
+link sebagai berikut :
+hello.html, artinya akan menuju ke http://127.0.0.1/belajar-link/hello.html
+/hello.html, artinya akan menuju ke http://127.0.0.1/hello.html
+pzn/hello.html, artinya akan menuju ke http://127.0.0.1/belajar-link/pzn/hello.html
+
+
+Kode : Relative URL
+``` html
+<html>
+    <body>
+        <h1>Belajar Relative URL</h1>
+        <ul>
+            <li><a href="hello.html">hello.html</a></li>
+            <li><a href="yns/index.html">yns/index.html</a></li>
+        </ul>
+    </body>
+</html>
+```
+
+## Bookmark
+Pada kasus halaman web yang sangat panjang, ada bagusnya kita menggunakan Bookmark
+Bookmark adalah link yang bisa digunakan untuk menampilkan HTML element dengan id tertentu
+Bookmark menggunakan # pada href, misal jika kita menggunakan index.html#eko, artinya ketika
+membuka halaman index.html, maka Web Browser akan otomatis menampilkan pada posisi HTML
+Element dengan id eko
+Jika kita ingin membuat link di halaman HTML itu sendiri, kita bisa langsung buat Link dengan href
+langsung berisi #bookmark nya
+
+Kode : Bookmark di Halaman Sendiri
+``` html
+<html>
+    <body>
+        <h1>daftar isi</h1>
+        <ul>
+            <li><a href="#judul1">Judul 1</a></li>
+            <li><a href="#judul2">Judul 2</a></li>
+            <li><a href="#judul3">Judul 3</a></li>
+        </ul>
+
+        <h1 id="#judul1">Judul 1</h1>
+        <p>artikel</p>
+        <p>artikel</p>
+        <p>artikel</p>
+    </body>
+</html>
+```
+
+Kode : Bookmark ke Halaman Lain
+``` html
+<html>
+    <body>
+        <h1>daftar isi</h1>
+        <ul>
+            <li><a href="019-link-bookmark-dihalaman-sendiri.html#judul1">Judul 1</a></li>
+            <li><a href="019-link-bookmark-dihalaman-sendiri.html#judul2">Judul 2</a></li>
+            <li><a href="019-link-bookmark-dihalaman-sendiri.html#judul3">Judul 3</a></li>
+        </ul>
+    </body>
+</html>
+```
