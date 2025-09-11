@@ -1,31 +1,55 @@
-# picture
-Selain untuk menampilkan gambar menggunakan tag img, di HTML juga bisa menggunakan tag
-picture untuk menampilkan gambar
-Salah satu keuntungan menggunakan tag picture adalah, kita bisa menggunakan beberapa lokasi
-gambar, dan bisa diatur sesuai dengan ukuran layar misalnya. Jadi ketika di layar besar, kita bisa
-kirim gambar dengan ukuran besar, dan ketika di layar kecil, kita bisa kirim gambar yang ukuran
-kecil
+# Picture
 
-## Picture Content
-Tag img adalah void element, sedangkan Tag picture bukan
-Di dalam tag picture, kita bisa menambahkan tag source yang berisi lokasi gambar, dan tag img
-sebagai default gambar ketika semua kondisi tag source tidak terpenuhi
+Selain menggunakan tag **`<img>`** untuk menampilkan gambar di HTML, kita juga bisa menggunakan tag **`<picture>`**.
+Keuntungan menggunakan `<picture>` adalah kita bisa menampilkan **gambar yang berbeda sesuai kondisi tertentu**, misalnya ukuran layar.
 
-Kode : Picture
-``` html
+👉 Contoh:
+
+* Jika layar **besar**, tampilkan gambar berukuran besar.
+* Jika layar **kecil**, tampilkan gambar versi kecil (lebih ringan).
+
+---
+
+## Perbedaan `<img>` dan `<picture>`
+
+* `<img>` adalah **void element** (tidak punya isi, hanya 1 tag tunggal).
+* `<picture>` **bukan void element**, sehingga bisa berisi beberapa tag di dalamnya.
+
+Di dalam `<picture>`, biasanya kita menambahkan:
+
+* **`<source>`** → untuk menentukan gambar yang akan ditampilkan berdasarkan kondisi tertentu.
+* **`<img>`** → sebagai gambar default (ditampilkan jika semua kondisi `<source>` tidak terpenuhi).
+
+---
+
+## Contoh Kode `<picture>`
+
+```html
 <html>
-    <body>
-        <h1>belajar picture</h1>
-        <picture>
-            <source media="(max-width: 500px)" srcset="021-picture/gambar-green.jpg">
-            <source media="(max-width: 600px)" srcset="021-picture/gambar-black.jpg">
-            <img src="021-picture/gambar.jpg" alt="gambar" style="width:250px ; height:250px;">
-        </picture>
-    </body>
+  <body>
+    <h1>Belajar Picture</h1>
+
+    <picture>
+      <!-- Jika layar max 500px -->
+      <source media="(max-width: 500px)" srcset="021-picture/gambar-green.jpg">
+
+      <!-- Jika layar max 600px -->
+      <source media="(max-width: 600px)" srcset="021-picture/gambar-black.jpg">
+
+      <!-- Default gambar -->
+      <img src="021-picture/gambar.jpg" alt="gambar" style="width:250px; height:250px;">
+    </picture>
+
+  </body>
 </html>
 ```
 
-## Media Attribute
-Atribut media di tag source berisikan media query CSS
-Detailnya akan kita bahas nanti di kelas CSS
-https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries
+---
+
+## Atribut `media`
+
+* Atribut **`media`** pada tag `<source>` berisi **media query CSS**.
+* Media query digunakan untuk menentukan **kapan gambar tersebut ditampilkan**, biasanya berdasarkan ukuran layar.
+
+👉 Lebih detail tentang media query bisa dipelajari di:
+[MDN Web Docs - Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
