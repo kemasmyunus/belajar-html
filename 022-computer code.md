@@ -1,24 +1,25 @@
 # Computer Code
-Sebagai programmer, kadang kita sering membuat web artikel tentang kode program
-Pada kasus seperti ini, ketika kita membuat kode program di HTML menggunakan paragraph, maka
-akan menyulitkan, karena semua enter dan spasi akan dinormalkan oleh HTML
-Kadang kita ingin menampilkan kodenya apa adanya
+Sebagai programmer, kita sering menulis artikel atau tutorial yang berisi kode program.  
+Jika kita menuliskan kode program di dalam tag **paragraph (`<p>`)**, maka semua **enter** dan **spasi** akan dirapikan otomatis oleh HTML. Akibatnya, kode tidak tampil sesuai aslinya.  
 
-## Tag Pre
-Untuk menampilkan tulisan di dalam HTML apa adanya, kita bisa menggunakan tag pre
-Namun perlu diingat, kode HTML tetap tidak akan ditampilkan, jadi kita harus menggunakan HTML
-Entities
+Agar kode tampil persis seperti yang kita tulis, kita bisa menggunakan **tag `<pre>`**.  
 
-kode : pre
-``` html
+## Tag `<pre>`
+Tag `<pre>` berfungsi untuk menampilkan teks apa adanya, termasuk spasi dan baris baru.  
+Namun perlu diingat, jika kita menuliskan kode HTML di dalam `<pre>`, tetap saja kode tersebut bisa terbaca sebagai HTML. Untuk itu, kita perlu menggunakan **HTML Entities** (misalnya `&lt;` untuk `<` dan `&gt;` untuk `>`).  
+
+### Contoh
+Kode berikut menampilkan program Java sederhana di dalam HTML:
+
+```html
 <html>
     <body>
         <h1>Belajar Kode Java</h1>
         <pre>
-            public statuc void main(String[] args){
-                System.out.println("Hello World");
-            }
+public static void main(String[] args) {
+    System.out.println("Hello World");
+}
         </pre>
     </body>
 </html>
-```
+````
