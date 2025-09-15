@@ -1,63 +1,77 @@
-# block dan inline
-Di dalam HTML, semua element memiliki nilai display, tergantung dari jenis element yang
-digunakan
-Secara garis besar, ada dua nilai untuk display, block dan inline
+# Block dan Inline pada HTML
 
-## block
-Element yang memiliki nilai display block, selalu dimulai dengan baris baru.
-Web browser secara otomatis menambahkan jarak / margin sebelum dan setelah element
-Dan element dengan nilai display block, selalu mengambil ukuran penuh yang tersedia, yag artinya
-dia akan meregang dari kiri dan kanan
-Contoh tag yang menggunakan nilai display block adalah :
-h1-h6, p, header, body, ul, li, ol, table, form, dan lain-lain
+Setiap elemen di HTML memiliki **nilai display** yang menentukan bagaimana elemen tersebut ditampilkan di halaman web.  
+Secara umum, ada dua jenis utama display: **block** dan **inline**.
 
-## inline
-Sedangkan dalam display inline, element tidak dimulai dengan baris baru
-Selain itu dalam display inline, element hanya menggunakan ukuran seperlunya saja
-Contoh tag yang menggunakan nilai display inline :
-a, b, i, em, button, strong, input, dan lain-lain
+---
 
-## div
-Div adalah salah satu tag di HTML yang memiliki nilai display block
-Div biasanya digunakan sebagai container (wadah) untuk beberapa element HTML
-Div banyak digunakan ketika kita ingin membedakan bagian-bagian dalam element HTML, misal
-ada bagian menu, content, footer, header dan lain-lain
-Biasanya semua itu dibungkus dalam Div
+## Block
+Elemen dengan display **block** selalu dimulai di **baris baru**.  
+Browser juga otomatis memberi jarak (margin) sebelum dan sesudah elemen.  
 
-kode : div
-``` html
+Ciri lainnya, elemen block akan **melebar memenuhi lebar halaman yang tersedia** (dari kiri ke kanan).  
+
+**Contoh tag block:**  
+`h1–h6`, `p`, `header`, `body`, `ul`, `li`, `ol`, `table`, `form`, dll.
+
+---
+
+## Inline
+Elemen dengan display **inline** tidak dimulai di baris baru.  
+Ukurannya hanya sesuai dengan konten di dalamnya, **tidak melebar ke seluruh halaman**.  
+
+**Contoh tag inline:**  
+`a`, `b`, `i`, `em`, `button`, `strong`, `input`, dll.
+
+---
+
+## Div
+`<div>` adalah elemen **block** yang sering digunakan sebagai **container (wadah)**.  
+Div berguna untuk mengelompokkan bagian halaman, misalnya menu, konten, header, atau footer.  
+Biasanya setiap bagian dibungkus dengan div agar mudah diatur tampilannya.  
+
+**Contoh penggunaan div:**
+```html
 <html>
-    <body>
-        <div id="menu" style="background-color:yellow;">
-            <ul>
-                <li>Beranda</li>
-                <li>Artikel</li>
-                <li>Media Sosial</li>
-            </ul>
-        </div>
-        <div id="content" style="background-color:pink;">
-            <h1>Judul Halaman</h1>
-            <p>isi halaman</p>
-        </div>
-    </body>
+  <body>
+    <div id="menu" style="background-color:yellow;">
+      <ul>
+        <li>Beranda</li>
+        <li>Artikel</li>
+        <li>Media Sosial</li>
+      </ul>
+    </div>
+
+    <div id="content" style="background-color:pink;">
+      <h1>Judul Halaman</h1>
+      <p>Isi halaman</p>
+    </div>
+  </body>
+</html>
+````
+
+---
+
+## Span
+
+Kalau `div` bersifat block, ada juga `<span>` yang bersifat **inline**.
+`<span>` biasanya digunakan untuk memberi **style khusus** pada bagian teks tertentu, tanpa memengaruhi seluruh paragraf.
+
+Misalnya kita ingin membuat teks “Programmer Zaman Now” dengan warna berbeda di tiap kata, kita bisa gunakan span untuk tiap katanya.
+
+**Contoh penggunaan span:**
+
+```html
+<html>
+  <body>
+    <h1>
+      <span style="color:red;">Kemas</span>
+      <span style="color:blue;">WFH</span>
+    </h1>
+  </body>
 </html>
 ```
 
-## span
-Jika Div menggunakan nilai display block, ada lagi tag span, yang menggunakan nilai display inline
-Span biasa digunakan pada kasus kita ingin menggunakan display inline, misal kita mau membuat
-tulisa Programmer Zaman Now, namun tiap kata berbeda warna
-Hal itu tidak bisa dilakukan jika menggunakan p, karena p akan mengubah seluruh warna tulisan
-Kita bisa gunakan span di tiap kata, agar bisa menambah style di tiap span
+---
 
-kode span
-``` html
-<html>
-    <body>
-        <h1>
-            <span style="color:red;">Kemas</span>
-            <span style="color:blue">WFH</span>
-        </h1>
-    </body>
-</html>
-```
+Dengan memahami perbedaan **block** dan **inline**, kita bisa lebih mudah mengatur tata letak elemen di halaman web.
